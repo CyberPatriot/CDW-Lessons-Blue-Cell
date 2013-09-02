@@ -48,9 +48,9 @@ In fact all the documentation, including the page you are reading, are written i
 
 Review Questions
 ----------------
-1. What process is placing a "computer within a computer" called?
-2. What do you call a standalone computer in the virtual world?
-3. What Markup language are we using?
+**1. What process is placing a "computer within a computer" called?**
+**2. What do you call a standalone computer in the virtual world?**
+**3. What Markup language are we using?**
 
 Extra Credit
 ------------

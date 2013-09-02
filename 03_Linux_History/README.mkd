@@ -109,11 +109,11 @@ So why aren't you using Linux?
 
 Review Questions
 ----------------
-1. Who created Linux?
-2. What OS is Linux based on?
-3. What is the software brain of an Operating System?
-4. Can the Linux "software brain" be modified?
-5. What type of smart phone uses Linux?
+**1. Who created Linux?**
+**2. What OS is Linux based on?**
+**3. What is the software brain of an Operating System?**
+**4. Can the Linux "software brain" be modified?**
+**5. What type of smart phone uses Linux?**
 
 Credits
 -------
