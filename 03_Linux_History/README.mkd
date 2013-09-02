@@ -46,7 +46,7 @@ will support anything other than AT-harddisks, as that's all I have :-(.
 ```
 -- [Linus' Original Post about "Linux"][4]
 
-Linus originally DID NOT release his OS Linux, but 6 months later (and some input from others) he switched the named to Linux.\[[1]\]
+Linus originally DID NOT release his OS as Linux, but 6 months later (and some input from others) he switched the named to Linux.\[[1]\]
 
 Linux 20 Years Later
 --------------------
@@ -56,14 +56,26 @@ Think back to the Virtualization diagram, and compare it to the structure of a m
 
 ![A Monolithic Kernel](./02_Kernels_.png)
 
+Linux has been designed to allow many tools to be built within the kernel to support user and application needs.
+The best part: the kernel is open source, so if you don't like something you can change the kernel!
+Don't like a feature: remote it!
+The kernel is missing a feature: add it!
+Also, many code examples, source files, and prebuilt kernels are freely available due to the great networking and connectivity the Internet.
+(Where's this support from Windows? No you CANNOT remove the Windows 8 wall...sorry it's not Linux)
+
+Due to this huge ability to modify the Linux kernel there are many version availble.
 In fact one of the most popular Linux listing websites, [DistroWatch.com](http://distrowatch.com/) \[3\], has 761 DIFFERENT VERSIONS of Linux listed.
 How many different versions of Windows can you recall?
 The versatility and dynamic nature of Linux cannot be stressed enough.
 
-Linux encourages its users to customize and create their own Operating System, however there are several major releases.
-Most notably: Ubuntu, Fedora, Mint, Debian, Red Hat, and CenTOS.
+Linux encourages its users to customize and create their own Operating System as well, however there are several major releases freely available so new users do not need to learn the steep learning curve of Linux kernels.
+Most notably: Ubuntu, Fedora, Mint, Debian, Red Hat, and CenTOS lead the charge for Linux Operating Systems.
 Each has different features, differing architectures, and different ways of operating.
 Yet, core "UNIX-like" tools exist on all of these systems, that still draw from the 1970's UNIX OS.
+
+Linux Powers the Internet
+-------------------------
+
 
 Credits
 -------
