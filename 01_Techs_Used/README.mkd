@@ -13,7 +13,7 @@ Note: this speed is not always guarenteed.
 
 A graphical example of how VM's work on a host machine can be seen below:
 
-[Virtualization Defined](./vmw-virtualization-defined.jpg) [2]
+![Virtualization Defined](./vmw-virtualization-defined.jpg) [[2]]
 
 Please note that there are MANY providers for running VM's.
 VM Ware and Virtual Box are the most prevelent on Windows, Mac OSX, and Linux.
