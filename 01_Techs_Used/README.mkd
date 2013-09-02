@@ -42,4 +42,8 @@ In fact all the documentation, including the page you are reading, are written i
 Credits
 -------
 [1] http://www.vmware.com/files/images/diagrams/vmw-virtualization-defined.jpg
+
 [2] http://www.aaronsw.com/weblog/001189
+
+[1]:http://www.vmware.com/files/images/diagrams/vmw-virtualization-defined.jpg
+[2]:http://www.aaronsw.com/weblog/001189
