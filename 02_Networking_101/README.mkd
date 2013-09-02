@@ -98,6 +98,7 @@ This could be used for programs that are sending and receiving on the same machi
 
 Notice that there is net and net6.
 These address are for IPv4 and IPv6.
+
 **1. What IPv4 address do you have?**
 
 ### Lab Time: What is your Network's External IP?
