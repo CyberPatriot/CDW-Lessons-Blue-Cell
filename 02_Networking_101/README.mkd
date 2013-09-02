@@ -82,6 +82,10 @@ Your "Computer", or rather your connection to the internet, is a single number c
 There are two versions of IP: v4 and v6.
 However, most of the Internet is still using IPv4, so we will only discuss that version.
 
+These are the 460 Million openly accessible and active IP Addresses in 2012 seen by the Carna Botnet:
+
+![2012 Internet Census](./03_2012_InternetCensus.png)
+
 ### Lab Time: What is your Computer's IP Address?
 Now you should be asking: "What is my computer's IP Address?"
 That's easy!

@@ -76,17 +76,30 @@ Yet, core "UNIX-like" tools exist on all of these systems, that still draw from 
 Linux Powers the Information Age
 --------------------------------
 ###Cheat: allyourAndroidarebelongtous 
-In July 2012 Android's market share in the United States was 52% and rose to 90% in China, and a modified Linux Kernel powers Android devices.[Wikiepdia][5]\[5\]
+In July 2012 Android's market share in the United States was 52% and rose to 90% in China, and a modified Linux kernel powers Android devices.[Wikiepdia][5] \[5\]
 
-###~20% of Server Revenues in Quarter 4 of 2011 were Linux
+###~20% of Server Revenues in Quarter 4 of 2011 were Linux Servers
 Linux Servers took home $2.6 Billion in the fourth quarter of 2011.
-This represented 18.4% of all server revenue, which is pretty impressive for free software.[ZD Net][6]\[6\]
+This represented 18.4% of all server revenue, which is pretty impressive for free software.[ZD Net][6] \[6\]
+
+It's probably okay to guess that this number has increased since 2011.
 
 ###Cheat: Poweroverwhelming
-Linux currently powers 476/500 of the worlds top 500 Super Computers[Top500][7]\[7\].
+Linux currently powers 476/500 of the worlds top 500 Super Computers [Top500][7] \[7\].
 
 ###A Good Guess: Linux Owns Website Hosting
-Apache and nginx are the #1 and quickly rising #3 Web servers on the Internet and make up 61.51% of the 716,822,317 sites surveyed by [Netcraft][8]\[8\].
+Apache and nginx are the #1 and quickly rising #3 Web servers on the Internet and make up 61.51% of the 716,822,317 sites surveyed by [Netcraft][8] \[8\].
+
+###Linux inspires the Coding World: Git
+Git is a Version Control System(VCS), a tool to control source code changes/updates/workflow, that manages the Linux Kernel's 15,803,499 lines of code [The H Open][9] \[9\].
+This tool's popularity is trending to replace the old VCS of SVN [Google Trends][10] \[10\].
+Additionally, Apple found it so useful that in 2010 it added to be the default VCS in it's XCode OSX/iOS developers tools [XCode Changelog][11] \[11\]
+
+Why Linux, Why Me?
+------------------
+In short: Linux is an amazing piece of software that's free, it powers MOST of what you touch, and it's a more configurable/customizable/power OS than Mac OSX and Windows.
+(Soon to be the host of Valve's Steambox for you gaming types)
+So why aren't you using Linux?
 
 Credits
 -------
@@ -106,6 +119,12 @@ Credits
 
 \[8\] http://news.netcraft.com/archives/category/web-server-survey/ (Retrieved 2 Sep 13)
 
+\[9\] http://www.h-online.com/open/features/What-s-new-in-Linux-3-10-1902270.html?page=3 (Retrieved 2 Sep 13)
+
+\[10\] http://www.google.com/trends/explore#q=git%20version%20control%2C%20%20svn%20version%20control%20&cmpt=q (Retrieved 2 Sep 13)
+
+\[11\] https://developer.apple.com/library/mac/releasenotes/DeveloperTools/RN-Xcode/ (Retrieved 2 Sep 13)
+
 [1]:http://en.wikipedia.org/wiki/History_of_Linux
 [2]:http://en.wikipedia.org/wiki/File:Unix_history-simple.svg
 [3]:http://en.wikipedia.org/wiki/File:Linus_Torvalds.jpeg
@@ -114,3 +133,6 @@ Credits
 [6]:http://www.zdnet.com/blog/open-source/linux-servers-keep-growing-windows-and-unix-keep-shrinking/10616
 [7]:http://www.top500.org/statistics/overtime/
 [8]:http://news.netcraft.com/archives/category/web-server-survey/
+[9]:http://www.h-online.com/open/features/What-s-new-in-Linux-3-10-1902270.html?page=3 
+[10]:http://www.google.com/trends/explore#q=git%20version%20control%2C%20%20svn%20version%20control%20&cmpt=q
+[11]:https://developer.apple.com/library/mac/releasenotes/DeveloperTools/RN-Xcode/
