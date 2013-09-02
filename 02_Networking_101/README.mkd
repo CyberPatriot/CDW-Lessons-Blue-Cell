@@ -98,7 +98,7 @@ This could be used for programs that are sending and receiving on the same machi
 
 Notice that there is net and net6.
 These address are for IPv4 and IPv6.
-*1. What IPv4 address do you have?*
+**1. What IPv4 address do you have?**
 
 ### Lab Time: What is your Network's External IP?
 Your network is only given ONE IP from your Internet Service Provider.
@@ -107,11 +107,11 @@ Your router will assign local IP's normally in the `192.168.1.XXX` range, so it 
 
 Run the following command: `wget http://ipecho.net/plain -O - -q ; echo`
 
-*2. What is your IP?*
+**2. What is your IP?**
 
-*3. Does this differ from the people around you? Why or Why Not?*
+**3. Does this differ from the people around you? Why or Why Not?**
 
-*4. What other way can you find a your external IP?
+**4. What other way can you find a your external IP?**
 
 ### Lab Time: Go to Facebook or Google with it's IP address!
 Can you recall every phone number in your phone?
@@ -122,9 +122,9 @@ This is why www.lolcats.com is easy to remember, but 192.81.131.161 is not.
 
 On your terminal run: `dig <web address>`
 
-*5. What are Google and Facebook IP's?*
+**5. What are Google and Facebook IP's?**
 
-*6. What happens when you go to http://<INSERTIP>/*
+**6. What happens when you go to http://\<INSERTIP\>/**
 
 The whole reason we can enter "names for numbers" is due to the Domain Name System.
 It's a series of servers that solely exist to translate your name requests and return the IP you want to start communications.
