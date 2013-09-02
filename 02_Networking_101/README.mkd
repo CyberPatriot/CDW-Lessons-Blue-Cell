@@ -1,7 +1,6 @@
 Lesson 2: Networking 101
 ========================
-This lesson is more of an FYI than material to learn.
-Many technologies power CDW, of which the two most important are Virtualization Tools and Markdown.
+This lesson focuses on a quick look at Networking with the Internet Protocol, and some command line tools to better understand networking.
 
 Required Materials
 ------------------
@@ -18,7 +17,7 @@ Due to this complexity we will NOT be discussing how every little piece of the I
 
 So what is the Cloud?
 ---------------------
-"The Cloud" is the biggest buzzword on the Internet, WWW, and every place in between that discusses the mass of wires, electrons, hardware, and software.
+"The Cloud" is the biggest buzzword on the Internet, WWW, and every place in between that discusses the mass of wires, electrons, hardware, and software that make up the Internet.
 Quite simply: It's a word trying to Jedi Mind Trick and wave away the dense place of electronics needed to create the Internet.
 "The Cloud" is simply a static location for an end user to access content and applications, but in fact this location is constantly changing and moving.
 Yet, the content providers provide these static services, so their users do NOT have to understand the mess of the internet.
@@ -27,8 +26,8 @@ What is this Internet Protocol?
 -------------------------------	
 So now that we know "the Cloud" is really just the Internet, how does it work?
 Simply: the Internet Protocol.
-A network protocol is a set of rules, methods, and structured elements used to establish way to execute communications.
-The Internet protocol establishes these items for constructing a Global communications network with uniquely identifiable addresses called "IP Addresses".
+A network protocol is a set of rules, methods, and structured elements used to establish a way to execute communications.
+The Internet protocol establishes these items for constructing a Global communications network of servers and clients with uniquely identifiable addresses called "IP Addresses".
 
 What are servers and clients?
 -----------------------------
