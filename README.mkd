@@ -39,6 +39,4 @@ If you don't get what is going on ... keep doing it; eventually (with enough rep
 
 Credits
 =======
-![Virtualization Defined](http://www.vmware.com/files/images/diagrams/vmw-virtualization-defined.jpg "VMWare's Outline of Virtualization")
-
 All images are being used under [Fair Use, Section 107, of The U.S. Copyright Law](http://www.copyright.gov/fls/fl102.html) unless otherwise stated.
