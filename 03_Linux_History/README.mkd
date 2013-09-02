@@ -1,5 +1,11 @@
 Lesson 3: A History of Linux
 ============================
+Required Materials
+------------------
+1. None
+
+A Little Bit About Linux
+------------------------
 Linux is a free and open source Operating System, which has been ported to numerous and runs millions of devices (TV's, routers, computers, robots, development boards, and countless others).
 This lesson will cover where Linux started, and where it's currently headed. 
 Linux is a shortened form of Linus' Unix, which was named after its inventor Linus Torvalds and the Operating System Unix.
@@ -100,6 +106,14 @@ Why Linux, Why Me?
 In short: Linux is an amazing piece of software that's free, it powers MOST of what you touch, and it's a more configurable/customizable/power OS than Mac OSX and Windows.
 (Soon to be the host of Valve's Steambox for you gaming types)
 So why aren't you using Linux?
+
+Review Questions
+----------------
+1. Who created Linux?
+2. What OS is Linux based on?
+3. What is the software brain of an Operating System?
+4. Can the Linux "software brain" be modified?
+5. What type of smart phone uses Linux?
 
 Credits
 -------

@@ -33,6 +33,10 @@ Topics
  6. ufw (Firewalls)
  7. Finding holes (executables/ listening network programs / services / automation tools)
 
+Your Mission Should You Choose to Accept it
+==========================================
+Complete the Labs, and Answer Review Questions... that's it.
+
 Final Note
 ==========
 If you don't get what is going on ... keep doing it; eventually (with enough repetition) it WILL make sense.
