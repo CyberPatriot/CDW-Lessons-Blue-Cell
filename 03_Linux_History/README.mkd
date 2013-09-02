@@ -91,9 +91,9 @@ Linux currently powers 476/500 of the worlds top 500 Super Computers [Top500][7]
 Apache and nginx are the #1 and quickly rising #3 Web servers on the Internet and make up 61.51% of the 716,822,317 sites surveyed by [Netcraft][8] \[8\].
 
 ###Linux inspires the Coding World: Git
-Git is a Version Control System(VCS), a tool to control source code changes/updates/workflow, that manages the Linux Kernel's 15,803,499 lines of code [The H Open][9] \[9\].
-This tool's popularity is trending to replace the old VCS of SVN [Google Trends][10] \[10\].
-Additionally, Apple found it so useful that in 2010 it added to be the default VCS in it's XCode OSX/iOS developers tools [XCode Changelog][11] \[11\]
+Git is a Version Control System(VCS), a tool to control source code changes/updates/workflow, that manages the Linux Kernel's 15,803,499 lines of code \[[The H Open][9]\] \[9\].
+This tool's popularity is trending to replace the old VCS of SVN \[[Google Trends][10]\] \[10\].
+Additionally, Apple found it so useful that in 2010 it added to be the default VCS in it's XCode OSX/iOS developers tools \[[XCode Changelog][11]\] \[11\]
 
 Why Linux, Why Me?
 ------------------
