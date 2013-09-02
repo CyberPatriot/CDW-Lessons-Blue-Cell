@@ -25,13 +25,13 @@ Topics
 2. Networking 101: A Note on Client/Servers or "What is a server/"the cloud?"
 3. Linux History
 4. Linux 101
-a. Terminal 101 (commands)
-b. Apache (webservers) 101
-c SSH
-d. Users (permissions)
-e. Sudo
-f. ufw (Firewalls)
-g. Finding holes (executables/ listening network programs / services / automation tools)
+ 1. Terminal 101 (commands)
+ 2. Apache (webservers) 101
+ 3. SSH
+ 4. Users (permissions)
+ 5. Sudo
+ 6. ufw (Firewalls)
+ 7. Finding holes (executables/ listening network programs / services / automation tools)
 
 Final Note
 ==========
