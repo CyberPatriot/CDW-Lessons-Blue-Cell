@@ -1,0 +1,28 @@
+Lesson 3: A history of Linux
+============================
+Linux is a free and open source Operating System, which has been ported to numerous and runs millions of devices (TV's, routers, computers, robots, development boards, and countless others).
+This lesson will cover where Linux started, and where it's currently headed. 
+Linux is a shortened form of Linus' Unix, which was named after its inventor Linus Torvalds and the Operating System Unix.
+Thus, before we talk Linux, let's talk Unix.
+
+Unix: the Operating System Formerly Known as UNICS
+--------------------------------------------------
+In the 70's a bunch of people at Bell Labs, a sub company for AT&T, created the Operating System "<u>UN</u>iplexed <u>I</u>nformation and <u>C</u>omputing <u>S</u>ervice" (UNICS)[Wikipedia][1].
+Eventually the OS was renamed to UNIX, and was shared between companies and universities across the nation.
+The different approach of UNIX was to create a micro kernel(the software brain of the computer vs. the hardware brain of the CPU) with many, small supporting tools.
+UNIX came with a bunch of these little tools and OS structure, which has spawned MANY Operating Systems including Linux and Mac OSX:
+
+![UNIX Family Tree](./01_Family_Tree.png)
+
+Welcome to the world of Freax! ... Wait, what?
+----------------------------------------------
+
+
+Credits
+-------
+\[1\] http://en.wikipedia.org/wiki/History_of_Linux
+
+\[2\] http://en.wikipedia.org/wiki/File:Unix_history-simple.svg
+
+[1]:http://en.wikipedia.org/wiki/History_of_Linux
+[2]:http://en.wikipedia.org/wiki/File:Unix_history-simple.svg
