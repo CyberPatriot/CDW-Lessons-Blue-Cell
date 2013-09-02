@@ -1,5 +1,5 @@
-Lesson 2: Networking 101 - A Note on Client/Servers or "What is a server/"the cloud?"
-=====================================================================================
+Lesson 2: Networking 101
+========================
 This lesson is more of an FYI than material to learn.
 Many technologies power CDW, of which the two most important are Virtualization Tools and Markdown.
 
@@ -46,7 +46,7 @@ This again is a misnomer, since the server is simply another computer connected 
 
 Please see the figure below to view a graphical representation:
 
-![Client/Server Diagram][1]\[1\]
+![Client/Server Diagram](./Client-server-model.svg)\[1\]
 
 
 IP Defined
@@ -69,7 +69,7 @@ However, it gives great ASCII ART Pictures for how the Internet is designed:
 ```
 As seen in the above figure your Applications will transmit over these "Internet Modules" to allow end to end communication.
 It should be be evident that there is no direct path, but rather hopping to get from A to B.
-The words network and web should have a greater meaning now: many, many devices are wired, wirelessly, and connected satellite to 
+The words network and web should have a greater meaning now: many, many devices are wired and wirelessly connected through cable, satellites, RF transmissions, and even light to allow IP to flow from "A to B". 
 
 IP Addresses: Your Computer's "Phone Number"
 --------------------------------------------
@@ -82,12 +82,12 @@ Your "Computer", or rather your connection to the internet, is a single number c
 There are two versions of IP: v4 and v6.
 However, most of the Internet is still using IPv4, so we will only discuss that version.
 
-### Lab Time
+### Lab Time: What is your Computer's IP Address?
 Now you should be asking: "What is my computer's IP Address?"
 That's easy!
 Run the command: `ifconfig` on Linux (`ipconfig` on Windows), and you should see something similar to the image below:
 
-![ifconfig Output](./01_ifconfig.png)
+![ifconfig Output](./01_ifconfig_.png)
 
 Notice that there are three devices in the images above: eth0, eth1, and lo.
 These are Ethernet 0, Ethernet 1, and Loopback.
@@ -95,11 +95,13 @@ Ethernet is the wired form of connections with a computer.
 Loopback is a special device that never sends communication out to the Internet, but "loops back" the data to the same machine.
 This could be used for programs that are sending and receiving on the same machine (imagine running a Minecraft server, and then wanting to play on the same computer).
 
+### What is your Network's IP?
+
 Credits
 -------
 \[1\]http://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg
 
 \[2\]http://tools.ietf.org/html/rfc791
 
-[1]:Client-server-model.svg <!--Taken under a GPL 2.1 from wikimedia.org: http://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg !-->
+[1]:http://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg <!--Taken under a GPL 2.1 from wikimedia.org: http://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg !-->
 [2]:http://tools.ietf.org/html/rfc791
