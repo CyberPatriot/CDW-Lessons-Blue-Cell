@@ -13,7 +13,7 @@ Note: this speed is not always guarenteed.
 
 A graphical example of how VM's work on a host machine can be seen below:
 
-![Virtualization Defined](./vmw-virtualization-defined.jpg) [[2]]
+![Virtualization Defined](./vmw-virtualization-defined.jpg) [[1]]
 
 Please note that there are MANY providers for running VM's.
 VM Ware and Virtual Box are the most prevelent on Windows, Mac OSX, and Linux.
@@ -27,7 +27,7 @@ There are many advantages of running computers within computers some of these re
 
 Markdown
 --------
-Markdown is Markup language created by Aaron Swartz and John Gruber, which was designed to make writing web pages as easy as writing an email while allowing you to use the same/similar syntax <cite>[AaronSwartz.com][1]</cite>.
+Markdown is Markup language created by Aaron Swartz and John Gruber, which was designed to make writing web pages as easy as writing an email while allowing you to use the same/similar syntax <cite>[AaronSwartz.com][2][[2]]</cite>.
 Ideally you can write your web content with the least amount of "coding".
 Markdown supports HTML4/5 and CSS, and can even be exented to LaTeX to be compiled to a PDF.
 It's free, adaptable, and is used in many websites as a quick and dirty way to make elegant documents.
@@ -41,5 +41,5 @@ In fact all the documentation, including the page you are reading, are written i
 
 Credits
 -------
-[1]:http://www.aaronsw.com/weblog/001189
-[2]:http://www.vmware.com/files/images/diagrams/vmw-virtualization-defined.jpg
+[1] http://www.vmware.com/files/images/diagrams/vmw-virtualization-defined.jpg
+[2] http://www.aaronsw.com/weblog/001189
