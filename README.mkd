@@ -1,0 +1,44 @@
+About
+=====
+This Repository is a collection of lessons targeted at the Cyber Defense Workshop (CDW) 2.0's Red vs. Blue Competition.
+Specifically, it will train and educate individuals on the threats of running "online" services, and how to defend against them.
+
+Requirements
+============
+1. A Markdown Rendering Website with these lessons (GitLab / GitHub/ etc)
+
+or
+
+1. A precompiled PDF of the lessons
+
+2. A Debian based version Linux (recommended Ubuntu) 
+
+Optional Requirements
+=====================
+1. VirtualBox Installed
+2. Vagrant Installed
+3. The CDW_Lessons_Blue-Cell box hosting this repository
+
+Topics
+======
+1) A Note on the Technologies Used (Virtualization & Markdown) to Power CDW 2.0 
+2) A Note on Client/Servers: what is a server/"the cloud"?
+3) Linux History
+4) Linux 101
+a) Terminal 101 (commands)
+b) Apache (webservers) 101
+c) SSH
+d) Users (permissions)
+e) Sudo
+f) ufw (Firewalls)
+g) Finding holes (executables/ listening network programs / services / automation tools)
+
+Final Note
+==========
+If you don't get what is going on ... keep doing it; eventually (with enough repetition) it WILL make sense.
+
+Credits
+=======
+![Virtualization Defined](http://www.vmware.com/files/images/diagrams/vmw-virtualization-defined.jpg "VMWare's Outline of Virtualization")
+
+All images are being used under [Fair Use, Section 107, of The U.S. Copyright Law](http://www.copyright.gov/fls/fl102.html) unless otherwise stated.
