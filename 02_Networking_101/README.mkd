@@ -6,6 +6,7 @@ Many technologies power CDW, of which the two most important are Virtualization 
 Required Materials
 ------------------
 1. Debian Based Linux
+2. An Internet Connection
 
 We are all connected
 --------------------
@@ -46,7 +47,7 @@ This again is a misnomer, since the server is simply another computer connected 
 
 Please see the figure below to view a graphical representation:
 
-![Client/Server Diagram](./Client-server-model.svg)\[1\]
+![Client/Server Diagram](./02_ClientServer_.png)\[1\]
 
 
 IP Defined
@@ -95,7 +96,39 @@ Ethernet is the wired form of connections with a computer.
 Loopback is a special device that never sends communication out to the Internet, but "loops back" the data to the same machine.
 This could be used for programs that are sending and receiving on the same machine (imagine running a Minecraft server, and then wanting to play on the same computer).
 
-### What is your Network's IP?
+Notice that there is net and net6.
+These address are for IPv4 and IPv6.
+*1. What IPv4 address do you have?*
+
+### Lab Time: What is your Network's External IP?
+Your network is only given ONE IP from your Internet Service Provider.
+This IP is normally assigned to your modem (you may have a modem/router combo).  
+Your router will assign local IP's normally in the `192.168.1.XXX` range, so it will not be the same as your external address.
+
+Run the following command: `wget http://ipecho.net/plain -O - -q ; echo`
+
+*2. What is your IP?*
+
+*3. Does this differ from the people around you? Why or Why Not?*
+
+*4. What other way can you find a your external IP?
+
+### Lab Time: Go to Facebook or Google with it's IP address!
+Can you recall every phone number in your phone?
+Can you go to your favorite websites by memory?
+
+No one knows exactly why, but humans have an easier time remembering sets of names vs. sets of numbers.
+This is why www.lolcats.com is easy to remember, but 192.81.131.161 is not.
+
+On your terminal run: `dig <web address>`
+
+*5. What are Google and Facebook IP's?*
+
+*6. What happens when you go to http://<INSERTIP>/*
+
+The whole reason we can enter "names for numbers" is due to the Domain Name System.
+It's a series of servers that solely exist to translate your name requests and return the IP you want to start communications.
+This is a whole new rabbit whole we AREN'T travsering, but feel free to explore on the Internet!
 
 Credits
 -------
