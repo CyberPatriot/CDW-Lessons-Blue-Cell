@@ -58,7 +58,7 @@ Think back to the Virtualization diagram, and compare it to the structure of a m
 
 Linux has been designed to allow many tools to be built within the kernel to support user and application needs.
 The best part: the kernel is open source, so if you don't like something you can change the kernel!
-Don't like a feature: remote it!
+Don't like a feature: remove it!
 The kernel is missing a feature: add it!
 Also, many code examples, source files, and prebuilt kernels are freely available due to the great networking and connectivity the Internet.
 (Where's this support from Windows? No you CANNOT remove the Windows 8 wall...sorry it's not Linux)
@@ -73,21 +73,44 @@ Most notably: Ubuntu, Fedora, Mint, Debian, Red Hat, and CenTOS lead the charge 
 Each has different features, differing architectures, and different ways of operating.
 Yet, core "UNIX-like" tools exist on all of these systems, that still draw from the 1970's UNIX OS.
 
-Linux Powers the Internet
--------------------------
+Linux Powers the Information Age
+--------------------------------
+###Cheat: allyourAndroidarebelongtous 
+In July 2012 Android's market share in the United States was 52% and rose to 90% in China, and a modified Linux Kernel powers Android devices.[Wikiepdia][5]\[5\]
 
+###~20% of Server Revenues in Quarter 4 of 2011 were Linux
+Linux Servers took home $2.6 Billion in the fourth quarter of 2011.
+This represented 18.4% of all server revenue, which is pretty impressive for free software.[ZD Net][6]\[6\]
+
+###Cheat: Poweroverwhelming
+Linux currently powers 476/500 of the worlds top 500 Super Computers[Top500][7]\[7\].
+
+###A Good Guess: Linux Owns Website Hosting
+Apache and nginx are the #1 and quickly rising #3 Web servers on the Internet and make up 61.51% of the 716,822,317 sites surveyed by [Netcraft][8]\[8\].
 
 Credits
 -------
-\[1\] http://en.wikipedia.org/wiki/History_of_Linux
+\[1\] http://en.wikipedia.org/wiki/History_of_Linux (Retrieved 2 Sep 13)
 
-\[2\] http://en.wikipedia.org/wiki/File:Unix_history-simple.svg
+\[2\] http://en.wikipedia.org/wiki/File:Unix_history-simple.svg (Retrieved 2 Sep 13)
 
-\[3\] http://en.wikipedia.org/wiki/File:Linus_Torvalds.jpeg
+\[3\] http://en.wikipedia.org/wiki/File:Linus_Torvalds.jpeg (Retrieved 2 Sep 13)
 
-\[4\] https://groups.google.com/forum/#!topic/comp.os.minix/dlNtH7RRrGA%5B1-25-false%5D
+\[4\] https://groups.google.com/forum/#!topic/comp.os.minix/dlNtH7RRrGA%5B1-25-false%5D (Retrieved 2 Sep 13)
+
+\[5\] http://en.wikipedia.org/wiki/Android_(operating_system)#Market_share_and_rate_of_adoption
+
+\[6\] http://www.zdnet.com/blog/open-source/linux-servers-keep-growing-windows-and-unix-keep-shrinking/10616 (Retrieved 2 Sep 13)
+
+\[7\] http://www.top500.org/statistics/overtime/ (Retrieved 2 Sep 13)
+
+\[8\] http://news.netcraft.com/archives/category/web-server-survey/ (Retrieved 2 Sep 13)
 
 [1]:http://en.wikipedia.org/wiki/History_of_Linux
 [2]:http://en.wikipedia.org/wiki/File:Unix_history-simple.svg
 [3]:http://en.wikipedia.org/wiki/File:Linus_Torvalds.jpeg
 [4]:https://groups.google.com/forum/#!topic/comp.os.minix/dlNtH7RRrGA%5B1-25-false%5D
+[5]:http://en.wikipedia.org/wiki/Android_(operating_system)#Market_share_and_rate_of_adoption
+[6]:http://www.zdnet.com/blog/open-source/linux-servers-keep-growing-windows-and-unix-keep-shrinking/10616
+[7]:http://www.top500.org/statistics/overtime/
+[8]:http://news.netcraft.com/archives/category/web-server-survey/
