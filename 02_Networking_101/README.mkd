@@ -1,0 +1,105 @@
+Lesson 2: Networking 101 - A Note on Client/Servers or "What is a server/"the cloud?"
+=====================================================================================
+This lesson is more of an FYI than material to learn.
+Many technologies power CDW, of which the two most important are Virtualization Tools and Markdown.
+
+Required Materials
+------------------
+1. Debian Based Linux
+
+We are all connected
+--------------------
+In modern times there is rarely a person that is not connected to "the Internet".
+However, MOST people do NOT know what the Internet is, or that it is IN FACT different from the World Wide Web(WWW).
+Note: When you "surf the Internet" you are actually surfing the Web.
+The Internet is the network of connected devices using many different protocols and pieces of hardware that allows an end user to get from point A to point B.
+Due to this complexity we will NOT be discussing how every little piece of the Internet works, but rather only talk in terms of the Internet Protocol (IP).
+
+So what is the Cloud?
+---------------------
+"The Cloud" is the biggest buzzword on the Internet, WWW, and every place in between that discusses the mass of wires, electrons, hardware, and software.
+Quite simply: It's a word trying to Jedi Mind Trick and wave away the dense place of electronics needed to create the Internet.
+"The Cloud" is simply a static location for an end user to access content and applications, but in fact this location is constantly changing and moving.
+Yet, the content providers provide these static services, so their users do NOT have to understand the mess of the internet.
+
+What is this Internet Protocol?
+-------------------------------	
+So now that we know "the Cloud" is really just the Internet, how does it work?
+Simply: the Internet Protocol.
+A network protocol is a set of rules, methods, and structured elements used to establish way to execute communications.
+The Internet protocol establishes these items for constructing a Global communications network with uniquely identifiable addresses called "IP Addresses".
+
+What are servers and clients?
+-----------------------------
+You've heard the terms, but what is a server or a client?
+Before we delve into the topics it should be pointed out that it is very easy to have a "cloud" like definition, as we have seen with the Internet Protocol, versus understanding how these objects function.
+
+Let's start with a client: it is a person, device, or program that tries to access a server.
+A client is at the server's will, and only can provide what it wants and any needed authentication credentials.
+It can provide input, but normally all data crunching/processing occurs on the server (see why it's easier to say "it happens on the cloud").
+
+Now, look at the word server.
+The root word is "serve".
+A server serves data, processing, or responds to the requests of clients.
+However, the implication of a server and the Internet is it's "floating in the cloud".
+This again is a misnomer, since the server is simply another computer connected into the network, or web of the Internet.
+
+Please see the figure below to view a graphical representation:
+
+![Client/Server Diagram][1]\[1\]
+
+
+IP Defined
+----------
+This protocol was proposed in 1981 and can be read in [RFC791][2]\[2\], however it should be noted that it's VERY DRY and VERY TECHINCAL.
+However, it gives great ASCII ART Pictures for how the Internet is designed:
+```bash
+   Application                                           Application
+   Program                                                   Program
+         \                                                   /
+       Internet Module      Internet Module      Internet Module
+             \                 /       \                /
+             LNI-1          LNI-1      LNI-2         LNI-2
+                \           /             \          /
+               Local Network 1           Local Network 2
+
+
+
+                            Transmission Path
+```
+As seen in the above figure your Applications will transmit over these "Internet Modules" to allow end to end communication.
+It should be be evident that there is no direct path, but rather hopping to get from A to B.
+The words network and web should have a greater meaning now: many, many devices are wired, wirelessly, and connected satellite to 
+
+IP Addresses: Your Computer's "Phone Number"
+--------------------------------------------
+Now imagine your phone: Does it automatically connect from your phone to a friend's phone?
+Does anyone have the same number?
+These may seem like silly questions, but apply this idea to your computer and ask: Does your computer have a number like a phone number?
+
+Yes.
+Your "Computer", or rather your connection to the internet, is a single number called the IP Address.
+There are two versions of IP: v4 and v6.
+However, most of the Internet is still using IPv4, so we will only discuss that version.
+
+### Lab Time
+Now you should be asking: "What is my computer's IP Address?"
+That's easy!
+Run the command: `ifconfig` on Linux (`ipconfig` on Windows), and you should see something similar to the image below:
+
+![ifconfig Output](./01_ifconfig.png)
+
+Notice that there are three devices in the images above: eth0, eth1, and lo.
+These are Ethernet 0, Ethernet 1, and Loopback.
+Ethernet is the wired form of connections with a computer.
+Loopback is a special device that never sends communication out to the Internet, but "loops back" the data to the same machine.
+This could be used for programs that are sending and receiving on the same machine (imagine running a Minecraft server, and then wanting to play on the same computer).
+
+Credits
+-------
+\[1\]http://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg
+
+\[2\]http://tools.ietf.org/html/rfc791
+
+[1]:Client-server-model.svg <!--Taken under a GPL 2.1 from wikimedia.org: http://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg !-->
+[2]:http://tools.ietf.org/html/rfc791

@@ -22,7 +22,7 @@ Optional Requirements
 Topics
 ======
 1) A Note on the Technologies Used (Virtualization & Markdown) to Power CDW 2.0 
-2) A Note on Client/Servers: what is a server/"the cloud"?
+2) Networking 101: A Note on Client/Servers or "What is a server/"the cloud?"
 3) Linux History
 4) Linux 101
 a) Terminal 101 (commands)

@@ -3,6 +3,10 @@ Lesson 1: A Note on the Technologies Used
 This lesson is more of an FYI than material to learn.
 Many technologies power CDW, of which the two most important are Virtualization Tools and Markdown.
 
+Required Materials
+------------------
+None.
+
 Virtualization Tools
 --------------------
 One of the weirdest aspects of computing is "Virtualization".
@@ -15,6 +19,9 @@ A graphical example of how VM's work on a host machine can be seen below:
 
 ![Virtualization Defined](./vmw-virtualization-defined.jpg) \[1\]
 
+Virtualization is accomplished by both software and hardware.
+Many CPU's add additional circuitry to give Virtualization access directly to hardware (RAM/CPU/etc).
+Then special software is created to run with the OS to allow multiple VM's to run indepently on the host machine.
 Please note that there are MANY providers for running VM's.
 VM Ware and Virtual Box are the most prevelent on Windows, Mac OSX, and Linux.
 For this workshop we are using Virtual Box by Oracle Software, which for all intents and purposes works the same way as VMWare.
