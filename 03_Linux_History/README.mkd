@@ -39,7 +39,8 @@ are welcome, but I won't promise I'll implement them :-)
 PS.  Yes - it's free of any minix code, and it has a multi-threaded fs. 
 It is NOT protable (uses 386 task switching etc), and it probably never
 will support anything other than AT-harddisks, as that's all I have :-(. 
-``` -- [Linus' Original Post about "Linux"][3]
+```
+-- [Linus' Original Post about "Linux"][3]
 
 Linus originally DID NOT release his OS Linux, but 6 months later (and some input from others) he switched the named to Linux.\[[1]\]
 
