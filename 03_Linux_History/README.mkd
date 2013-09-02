@@ -20,7 +20,7 @@ Fast forward 20 years to the beginning of the 90's and Linus Torvalds created a 
 However, he was inspired by the free and open source software movement to release his program as open source.
 
 This was his original post announcing Freax:
-```bash
+```
 Hello everybody out there using minix -
 I'm doing a (free) operating system (just a hobby, won't be big and
 professional like gnu) for 386(486) AT clones.  This has been brewing
