@@ -1,4 +1,4 @@
-Lesson 3: A history of Linux
+Lesson 3: A History of Linux
 ============================
 Linux is a free and open source Operating System, which has been ported to numerous and runs millions of devices (TV's, routers, computers, robots, development boards, and countless others).
 This lesson will cover where Linux started, and where it's currently headed. 
@@ -7,7 +7,7 @@ Thus, before we talk Linux, let's talk Unix.
 
 Unix: the Operating System Formerly Known as UNICS
 --------------------------------------------------
-In the 70's a bunch of people at Bell Labs, a sub company for AT&T, created the Operating System "<u>UN</u>iplexed <u>I</u>nformation and <u>C</u>omputing <u>S</u>ervice" (UNICS)[Wikipedia][1].
+In the 70's a bunch of people at Bell Labs, a sub company for AT&T, created the Operating System "<u>UN</u>iplexed <u>I</u>nformation and <u>C</u>omputing <u>S</u>ervice" (UNICS)\[[Wikipedia][1]\]\[1\].
 Eventually the OS was renamed to UNIX, and was shared between companies and universities across the nation.
 The different approach of UNIX was to create a micro kernel(the software brain of the computer vs. the hardware brain of the CPU) with many, small supporting tools.
 UNIX came with a bunch of these little tools and OS structure, which has spawned MANY Operating Systems including Linux and Mac OSX:
@@ -16,7 +16,32 @@ UNIX came with a bunch of these little tools and OS structure, which has spawned
 
 Welcome to the world of Freax! ... Wait, what?
 ----------------------------------------------
+Fast forward 20 years to the beginning of the 90's and Linus Torvalds created a Unix Terminal (command line) Emulator.
+However, he was inspired by the free and open source software movement to release his program as open source.
 
+This was his original post announcing Freax:
+```bash
+Hello everybody out there using minix -
+I'm doing a (free) operating system (just a hobby, won't be big and
+professional like gnu) for 386(486) AT clones.  This has been brewing
+since april, and is starting to get ready.  I'd like any feedback on
+things people like/dislike in minix, as my OS resembles it somewhat
+(same physical layout of the file-system (due to practical reasons)
+among other things).
+
+I've currently ported bash(1.08) and gcc(1.40), and things seem to work. 
+This implies that I'll get something practical within a few months, and
+I'd like to know what features most people would want.  Any suggestions
+are welcome, but I won't promise I'll implement them :-)
+
+                Linus (torv...@kruuna.helsinki.fi)
+
+PS.  Yes - it's free of any minix code, and it has a multi-threaded fs. 
+It is NOT protable (uses 386 task switching etc), and it probably never
+will support anything other than AT-harddisks, as that's all I have :-(. 
+``` -- [Linus' Original Post about "Linux"][3]
+
+Linus originally DID NOT release his OS Linux, but 6 months later (and some input from others) he switched the named to Linux.\[[1]\]
 
 Credits
 -------
@@ -24,5 +49,8 @@ Credits
 
 \[2\] http://en.wikipedia.org/wiki/File:Unix_history-simple.svg
 
+\[3\] https://groups.google.com/forum/#!topic/comp.os.minix/dlNtH7RRrGA%5B1-25-false%5D
+
 [1]:http://en.wikipedia.org/wiki/History_of_Linux
 [2]:http://en.wikipedia.org/wiki/File:Unix_history-simple.svg
+[3]:https://groups.google.com/forum/#!topic/comp.os.minix/dlNtH7RRrGA%5B1-25-false%5D
