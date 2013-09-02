@@ -134,7 +134,7 @@ This is a whole new rabbit whole we AREN'T travsering, but feel free to explore 
 Credits
 -------
 \[1\] http://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg
- <!--Taken under a GPL 2.1 from wikimedia.org: http://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg !-->
+ <Taken under a GPL 2.1 from wikimedia.org: http://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg>
 
 \[2\] http://tools.ietf.org/html/rfc791
 
