@@ -46,6 +46,22 @@ In fact all the documentation, including the page you are reading, are written i
 2. http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html
 3. http://daringfireball.net/projects/markdown/
 
+Extra Credit
+------------
+Make your own HTML from your markdown files:
+
+1. Install the Markdown tool
+```bash
+sudo apt-get install markdown
+```
+
+2. Tell markdown to create your HTML file:
+```bash
+markdown yourfile.mkd > ExamplePage.html
+```
+
+3. Open ExamplePage.html with your web browser
+
 Credits
 -------
 \[1\] http://www.vmware.com/files/images/diagrams/vmw-virtualization-defined.jpg
