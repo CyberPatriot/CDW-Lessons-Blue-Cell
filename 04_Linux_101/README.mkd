@@ -47,7 +47,8 @@ Run: `man man`.
 In order to quite type: q.
 
 ###Basic Commands Part 2: Knowing your working directory and how to "move around" in Linux
-1. pwd
+**1. pwd**
+
 Print Working Directory tells you where you are in the file system of Linux.
 If you are lost type: pwd.
 Most modern terminals will include what your location is in the terminal under normal use:
@@ -69,7 +70,9 @@ Run the following commands:
 man pwd
 pwd
 ```
-2. ls
+
+**2. ls**
+
 Now that you know how to find which folder you are working from find out what is in that folder with:
 
 ```bash
@@ -92,7 +95,8 @@ What happens when you run: `ls -al`?
 What about just: `l`?
 Finally: `ls -CF`.
 
-3. cd
+**3. cd**
+
 Given the fact we can tell where we are, and what the file contains let's try moving into a different working directory:
 ```bash
 man cd
@@ -110,7 +114,8 @@ To change into a named folder you must 1) ensure that it IS a folder (our friend
 It is optional to have the forward slash symbol in the name: `cd /var` is the same as `cd /var/`.
 Also, you can change into folders' subfolders in a single command: `cd /var/www/` will take us directly to the www/ folder within var/.
 
-4. ~
+**4. ~**
+
 There is now place like home.
 Tilda (~) represents your "home" folder for your user.
 
@@ -125,7 +130,7 @@ Home is normally the little corner on a computer where you can save your files a
 Additionally, Linux can optionally encrypt your data in home, so other users cannot snoop on your files (but it depends on how the computer was setup).
 
 ###Fun Filled Fact: You create a mess when running in Terminal, so clean it up!
-1. clear
+**1. clear**
 Clear will do simply that: clear your screen to a single prompt!
 ```bash
 man clear
@@ -134,7 +139,7 @@ clear
 This is nice to know when you start outputting LOTS of data to a screen.
 
 ###Basic Commands Part 3: File and Folder Manipulations
-**1. cat **
+**1. cat**
 
 Now that we know how to navigate around let's start poking around and looking at files.
 
