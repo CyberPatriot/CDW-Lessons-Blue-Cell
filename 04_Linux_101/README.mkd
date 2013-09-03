@@ -1,0 +1,307 @@
+Lesson 4: Linux 101
+===================
+Required Materials
+------------------
+1. A Debian based version of Linux
+2. An Internet Connection
+
+Lesson Recap
+------------
+So we have looked at the technologies powering CDW, looked at networking with IPv4, and covered the history of Linux.
+These have all lead up to this lesson which focuses on providing Internet services hosted on Linux, whilst securely managing the server agaisnt know "Cyber threats".
+The word "Cyber" is yet another word for networking and networks comprising of Internet communications, and the devices thereof that provide "online" or "cyberspace" services.
+
+The following sections will cover:
+1. Basic Terminal commands and tools
+2. Existing Cyberspace Threats
+3. Linux Security Concepts: Triage
+
+I. Lab Time: Basic Terminal commands and tools
+-----------------------------------------------
+One of the most awkward lessons to learn with Linux is the ability to fully interact with a computer through Terminal (known on Windows as Command Line).
+Gone is the Graphical User Interface (GUI) of the "Desktop" and mouse clicking to select, choose, and interact with your computer.
+"NOOOOOOOOOOOOOOOOOOOO!!!!!" You are currently screaming, but I assure you that you will survive.
+
+"Why would we ever get rid of the GUI?!" you too are asking, and the response is simple: GUI and Desktop environments take TONS of resources to run (RAM, HDD Storage, CPU cycles in computing, etc).
+By removing the GUI we have opened up a huge world of speed to respond to client and user needs.
+Again, revist the top 500 supercomputers: these are running Linux WITHOUT a GUI for most, if not all, of their processing.
+
+The following commands will be provided in command form.
+It will be your task to try each of them out and gain basic familiarity with these commands and how they function.
+
+**WARNING: in Linux all commands ARE CASE SENSITIVE!**
+
+**Pro Tip: TAB auto-completes commands, spellings, and known/present items**
+
+###Basic Commands Part 1: RTFM
+1. man
+Man is Linux's MANunal pager.
+It allows you read the "manual" of a provided command/tool.
+This will give you insight to what the command/tool does, and more so how to properly use the command.
+
+Classically on Internet forums when new Linux user asks how something works they will get the answer of RTFM.
+The answer means to read the man pages for the command, because it normally has the answer.
+
+Run: `man man`.
+
+In order to quite type: q.
+
+###Basic Commands Part 2: Knowing your working directory and how to "move around" in Linux
+1. pwd
+Print Working Directory tells you where you are in the file system of Linux.
+If you are lost type: pwd.
+Most modern terminals will include what your location is in the terminal under normal use:
+```bash
+vagrant@precise64:/var/www/test$
+```
+
+When breaking down the above terminal prompt it tells me I am:
+```bash
+<user>@<Computer Name> in the folder:
+/ (root directory)
+	---> var/ (A folder called Var, within root)
+		---> www/ (A folder called www, within var)
+```
+Think of the root directory (/) as drive, perhaps C:\, on Windows, so a similar folder location would be C:\var\www\ on Windows.
+
+Run the following commands:
+```bash
+man pwd
+pwd
+```
+2. ls
+Now that you know how to find which folder you are working from find out what is in that folder with:
+
+```bash
+man ls
+ls
+```
+
+ls will list the files and folders for you on your terminal screen.
+However, what are files and which are folders?
+What happens when you do not have a colored output?
+
+Run:
+```bash
+ls -l
+```
+
+How is the output different?
+Now how can you tell the files from the directories?
+What happens when you run: `ls -al`?
+What about just: `l`?
+Finally: `ls -CF`.
+
+3. cd
+Given the fact we can tell where we are, and what the file contains let's try moving into a different working directory:
+```bash
+man cd
+cd ..
+```
+
+Run `pwd`, and tell me what `cd ..` did.
+
+Jumping a command backwards run: `ls -al`.
+Do you see `..`?
+The symbols `..` means parent folder, or "up a folder".
+When you run `ls -al` you can see both a `.` and a `..`, which the symbols represent the working directory (`.`) and the parent directory (`..`).
+
+To change into a named folder you must 1) ensure that it IS a folder (our friend `ls` to the rescue!), and 2) run `cd <folder name>`.
+It is optional to have the forward slash symbol in the name: `cd /var` is the same as `cd /var/`.
+Also, you can change into folders' subfolders in a single command: `cd /var/www/` will take us directly to the www/ folder within var/.
+
+4. ~
+There is now place like home.
+Tilda (~) represents your "home" folder for your user.
+
+For reference run: `pwd`
+
+Now let's go home!: `cd ~`
+
+Run `pwd` once again.
+Where is your home folder?
+
+Home is normally the little corner on a computer where you can save your files and data.
+Additionally, Linux can optionally encrypt your data in home, so other users cannot snoop on your files (but it depends on how the computer was setup).
+
+###Fun Filled Fact: You create a mess when running in Terminal, so clean it up!
+1. clear
+Clear will do simply that: clear your screen to a single prompt!
+```bash
+man clear
+clear
+```
+This is nice to know when you start outputting LOTS of data to a screen.
+
+###Basic Commands Part 3: File and Folder Manipulations
+1. cat
+Now that we know how to navigate around let's start poking around and looking at files.
+
+```bash
+man cat
+cat ~/.bash_history
+```
+
+Cat will simply display a file's contents to the screen.
+In the above case we looked at bash's history file.
+
+However, what is the extra mess of the "/."?
+The notation of `.` means the current folder, and `.` is the same as `./`.
+Yet, we have `/.`...
+
+This meaning of the period following the forward slash indicates HIDDEN folders and files!
+So run: `ls ~/ -al`.
+How many hidden folders and files are in home?
+
+2. editor (or: nano, vim)
+The command `editor` will open up the default editor on the system.
+
+Run:
+```bash
+man editor
+```
+
+Why is there not a man entry for "editor", what editor did you get?
+This is due to the fact that debian based machines use update-alternatives to manage "symbolic links" to tools and programs.
+Editor is NOT a tool, but simply a shortcut.
+This mechanism allows for a user to customize their Linux machine to suit their prefered tools.
+
+To change your editor run: `update-alternatives --config editor`.
+Pressing enter will leave the current settings, press a number will change your choice of preferred editor.
+
+Note: nano and vim are two very, very common text editors on Linux, and are included with debian machines.
+
+3. cp, mv, and rm
+These three commands are VERY closely related.
+They will copy, move, and remove files and folders from a system and usually the results are PERMANENT!
+
+Run:
+```bash
+man cp
+man mv
+man rm
+```
+
+Copy a file:
+```bash
+cp ~/.bash_history ~/bash_history
+ls ~/
+ls -al ~/
+```
+What did we do?
+We copied the hidden file of bash_history in home to an visible copy in home.
+
+Move that file!
+```bash
+cd ~/
+ls
+mv bash_history .ssh/
+ls
+```
+These series of commands moved bash_history to the HIDDEN folder of ssh in the ~/ folder.
+
+```bash
+mv .ssh/bash_history ./ThisFile
+ls ./
+```
+This set of commands move the bash_history file from out of the hidden ssh folder to the working directory whilst renaming the file to "ThisFile".
+
+19. diff
+
+18. which
+9. find
+11. grep
+12. awk
+
+20. chmod
+21. chgrp
+22. chown
+22. adduser
+23. chattr
+
+25. kill
+24. apt-get
+ssh
+15. ps
+16. ip (ifconfig)
+17. ss (netstat)
+
+
+13. less
+8. | (pipe)
+
+14. sudo
+II. Existing Cyberspace Threats
+-------------------------------
+
+III. Linux Security Concepts: Triage
+------------------------------------
+In CDW 1.0 we introduced a concept of triage: 
+
+Change the Administrator Password and Username 
+Make the password at least 15 characters  [citation]
+write down your password and secure it!
+Incorporate a combination of numbers, letters (cap/lower) and symbols 
+Use a combination of random words (5+) that are easy to remember [citation]
+
+Users and Groups
+Disable Guest Accounts/Users
+Disable Unknown/Unneeded Accounts/Users 
+In Administrators Group, remove all Users except the Administrator from item #1 (which is the 1 that you edited) 
+Unless other types of Groups are needed, remove any unneeded groups
+
+Disable Unwanted Shared Folders
+The ADMIN$, C$ and IPC$ shared folders are Administrative Shares and cannot be disabled [citation]
+The $ happened to the end of the share name means that it’s a hidden share.
+Any other shares besides the 3 default administrative shares is probably unwanted
+
+Correctly Configure Windows Firewall   
+Ensure firewall is active (enabled)
+Check exceptions to make sure that only certain ports are open
+Keep/add exceptions only for the ports associated with required services
+Remove all exceptions to all other ports not running wanted services
+Remove all exceptions to unknown programs (these programs may be malicious)
+Additional firewalls are beneficial (COMODO)
+
+Install and run Anti Virus	
+Run anti virus early and often.
+Quarantine (not delete) malicious things for future auditing.
+
+Look for unwanted startups programs in:
+Registry
+msconfig
+Services
+
+Look for unwanted Services or programs
+Services
+Add/Remove Programs
+
+Install Windows Updates
+
+
+Review Questions
+----------------
+**1. Who created Linux?**
+
+**2. What OS is Linux based on?**
+
+**3. What is the software brain of an Operating System?**
+
+**4. Can the Linux "software brain" be modified?**
+
+**5. What type of smart phone uses Linux?**
+
+Credits
+-------
+\[1\] http://en.wikipedia.org/wiki/History_of_Linux (Retrieved 2 Sep 13)
+
+\[2\] http://en.wikipedia.org/wiki/File:Unix_history-simple.svg (Retrieved 2 Sep 13)
+
+\[3\] http://en.wikipedia.org/wiki/File:Linus_Torvalds.jpeg (Retrieved 2 Sep 13)
+
+\[4\] https://groups.google.com/forum/#!topic/comp.os.minix/dlNtH7RRrGA%5B1-25-false%5D (Retrieved 2 Sep 13)
+
+[1]:http://www.webupd8.org/2009/04/basic-terminal-commands-every-ubuntu.html
+[2]:http://en.wikipedia.org/wiki/File:Unix_history-simple.svg
+[3]:http://en.wikipedia.org/wiki/File:Linus_Torvalds.jpeg
+[4]:https://groups.google.com/forum/#!topic/comp.os.minix/dlNtH7RRrGA%5B1-25-false

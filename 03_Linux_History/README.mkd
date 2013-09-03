@@ -95,6 +95,7 @@ Linux currently powers 476/500 of the worlds top 500 Super Computers [Top500][7]
 
 ###A Good Guess: Linux Owns Website Hosting
 Apache and nginx are the #1 and quickly rising #3 Web servers on the Internet and make up 61.51% of the 716,822,317 sites surveyed by [Netcraft][8] \[8\].
+Both of these webservers are ran on Linux by default.
 
 ###Linux inspires the Coding World: Git
 Git is a Version Control System(VCS), a tool to control source code changes/updates/workflow, that manages the Linux Kernel's 15,803,499 lines of code \[[The H Open][9]\] \[9\].
