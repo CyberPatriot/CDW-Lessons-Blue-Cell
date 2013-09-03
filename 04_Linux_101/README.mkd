@@ -34,7 +34,8 @@ It will be your task to try each of them out and gain basic familiarity with the
 **Pro Tip: TAB auto-completes commands, spellings, and known/present items**
 
 ###Basic Commands Part 1: RTFM
-1. man
+**1. man**
+
 Man is Linux's MANunal pager.
 It allows you read the "manual" of a provided command/tool.
 This will give you insight to what the command/tool does, and more so how to properly use the command.
@@ -46,7 +47,7 @@ Run: `man man`.
 
 In order to quite type: q.
 
-###Basic Commands Part 2: Knowing your working directory and how to "move around" in Linux
+###Basic Commands Part 2: Working directory and how to "move around"
 **1. pwd**
 
 Print Working Directory tells you where you are in the file system of Linux.
@@ -131,6 +132,7 @@ Additionally, Linux can optionally encrypt your data in home, so other users can
 
 ###Fun Filled Fact: You create a mess when running in Terminal, so clean it up!
 **1. clear**
+
 Clear will do simply that: clear your screen to a single prompt!
 ```bash
 man clear
@@ -177,6 +179,15 @@ To change your editor run: `update-alternatives --config editor`.
 Pressing enter will leave the current settings, press a number will change your choice of preferred editor.
 
 Note: nano and vim are two very, very common text editors on Linux, and are included with debian machines.
+Each can be run as single commands: `nano` or `vim`, but you normally want to edit/look at specific files.
+
+Thus, you would type any of the following:
+```bash
+editor </path/to/filename>
+nano </path/to/filename>
+vim </path/to/filename>
+```
+Within each tool that have different commands/interfaces, so DON'T forget to `man`.
 
 **3. cp, mv, and rm**
 
@@ -212,35 +223,86 @@ These series of commands moved bash_history to the HIDDEN folder of ssh in the ~
 mv .ssh/bash_history ./ThisFile
 ls ./
 ```
-This set of commands move the bash_history file from out of the hidden ssh folder to the working directory whilst renaming the file to "ThisFile".
+This set of commands move the bash_history file from out of the hidden ssh folder to the working directory, whilst renaming the file to "ThisFile".
 
-**19. diff**
+Removing files can be a VERY dangerous action on Linux, since the files DO NOT go to a recycle bin, but are completely deleted.
+``man rm``
 
-**18. which**
-**9. find**
-**11. grep**
-**12. awk**
+To remove a file it's simply:
+```bash
+rm </path/to/filename>
+```
 
-**20. chmod**
-**21. chgrp**
-**22. chown**
-**22. adduser**
-**23. chattr**
-
-**25. kill**
-**24. apt-get**
-**ssh**
-**15. ps**
-**16. ip (ifconfig)**
-**17. ss (netstat)**
+If you need to remove a folder and do not place the proper "command flag" you will get a warning:
+```bash
+rm: cannot remove 'sup': Is a directory
+```
+So use man and find out how to remove that file!
 
 
-**13. less**
-**8. | (pipe)**
+###Fun Filled Fact: Files and Terminal output can be VERY LONG
+When you ran: `cat ~/.bash_history` you probably noticed there was more printed to your terminal than you could read.
+How do we fix this issue?
 
-**14. sudo**
+Enter: `less`.
+Of course: `man less` to figure out what it REALLY means.
+
+Less will allow you to page up and down on a terminal.
+However, it's a standalone tool, so how do we get cat's output to less?
+
+**STRING TOGETHER TOOLS!!!**
+
+In Lesson 3 you saw that Unix and Linux had many "built in tools", and have even used a handful.
+However, the real power in these Operating Systems in the ability to string together commands.
+
+Enter: `|` (pipe or bar as it's called)
+Pipe will allow you to "pipe" the output of a single tool to the input of another tool:
+```bash
+cat ~/.bash_history | less
+```
+
+Now, you should be able to scroll up and down through the bash_history file.
+
+###Basic Commands Part 4: Make me a Sandwich!
+
+**1. sudo**
+Sudo can be read as: "as Super User, DO: ____".
+
+Linux has a strict line in the sand between user space and root, or administrator, space.
+Yet, this line becomes blurred with sudo.
+This command allows a program to be executed at a root level, which will give full permissions on the OS.
+
+~[Make me a Sandwich](./01_sandwich.png)
+
+Normally, tools will tell you when they CANNOT execute due to lack of system privileges, and will caution about this fact
+
+###Advanced Tools
+There are HUNDREDS of tools and applications built into Linux, so there is NO WAY for us to cover ALL the tools.
+However, here's a list of commonly used advanced tools:
+```bash
+1. diff (lists the differences in files)
+2. which (tells you where the binary/executable for a command is located)
+3. find (will find folders/files/ strings within files)
+4. grep (globally search a regular expression and print)
+5. awk (used in file/string manipulations)
+6. chmod (change file's mode bits of RWX; read, write, execute)
+7. chgrp (changes the group a file belongs to)
+8. chown (changes the file owner)
+9. adduser (adds new users)
+10. deluser (removes a user)
+10. chattr (changes file attributes)
+11. kill (kills processes)
+12. apt-get (Aptitude tool for installation/removal of programs; normally found on Debian systems)
+13. ssh (Secure Shell; Allows remote connections between computers)
+14. ps (lists processes)
+15. ip && ifconfig (lists network settings/configurations)
+16. ss && netstat (lists connections sent and received by the OS)
+17. shutdown (will turn off a machine)
+18. reboot (will reboot a machine)
+
 II. Existing Cyberspace Threats
 -------------------------------
+
 
 III. Linux Security Concepts: Triage
 ------------------------------------
@@ -287,21 +349,9 @@ Add/Remove Programs
 Install Windows Updates
 
 
-Review Questions
-----------------
-**1. Who created Linux?**
-
-**2. What OS is Linux based on?**
-
-**3. What is the software brain of an Operating System?**
-
-**4. Can the Linux "software brain" be modified?**
-
-**5. What type of smart phone uses Linux?**
-
 Credits
 -------
-\[1\] http://en.wikipedia.org/wiki/History_of_Linux (Retrieved 2 Sep 13)
+\[1\] http://xkcd.com/149/ (Retrieved 3 Sep 13)
 
 \[2\] http://en.wikipedia.org/wiki/File:Unix_history-simple.svg (Retrieved 2 Sep 13)
 
@@ -309,7 +359,7 @@ Credits
 
 \[4\] https://groups.google.com/forum/#!topic/comp.os.minix/dlNtH7RRrGA%5B1-25-false%5D (Retrieved 2 Sep 13)
 
-[1]:http://www.webupd8.org/2009/04/basic-terminal-commands-every-ubuntu.html
+[1]:http://xkcd.com/149/
 [2]:http://en.wikipedia.org/wiki/File:Unix_history-simple.svg
 [3]:http://en.wikipedia.org/wiki/File:Linus_Torvalds.jpeg
 [4]:https://groups.google.com/forum/#!topic/comp.os.minix/dlNtH7RRrGA%5B1-25-false
