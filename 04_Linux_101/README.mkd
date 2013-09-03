@@ -266,13 +266,14 @@ Now, you should be able to scroll up and down through the bash_history file.
 ###Basic Commands Part 4: Make me a Sandwich!
 
 **1. sudo**
+
 Sudo can be read as: "as Super User, DO: ____".
 
 Linux has a strict line in the sand between user space and root, or administrator, space.
 Yet, this line becomes blurred with sudo.
 This command allows a program to be executed at a root level, which will give full permissions on the OS.
 
-~[Make me a Sandwich](./01_sandwich.png)
+![Make me a Sandwich](./01_sandwich.png)
 
 Normally, tools will tell you when they CANNOT execute due to lack of system privileges, and will caution about this fact
 
