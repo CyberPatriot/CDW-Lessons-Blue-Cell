@@ -300,6 +300,7 @@ However, here's a list of commonly used advanced tools:
 16. ss && netstat (lists connections sent and received by the OS)
 17. shutdown (will turn off a machine)
 18. reboot (will reboot a machine)
+```
 
 II. Existing Cyberspace Threats
 -------------------------------
