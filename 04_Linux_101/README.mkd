@@ -301,6 +301,15 @@ However, here's a list of commonly used advanced tools:
 17. shutdown (will turn off a machine)
 18. reboot (will reboot a machine)
 ```
+###Super Awesome, Not-Scientific, Correlated Terminal Commands
+The following website has a great web of connected commands as surveyed from the Ycombinator forums.
+It was a survey of the top 100 commands, which have be correlated for usage.
+
+http://jvns.ca/projects/unix-command-survey/graph.html
+
+Original call for help:
+1.https://docs.google.com/forms/d/1XNMoSdfYFe_WkPfU--M88oL00PDLIOAo1HxjhZvZYJ4/viewform
+2. https://news.ycombinator.com/item?id=5733426
 
 II. Existing Cyberspace Threats
 -------------------------------
