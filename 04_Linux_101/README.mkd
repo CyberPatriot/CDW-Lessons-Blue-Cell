@@ -134,7 +134,8 @@ clear
 This is nice to know when you start outputting LOTS of data to a screen.
 
 ###Basic Commands Part 3: File and Folder Manipulations
-1. cat
+**1. cat **
+
 Now that we know how to navigate around let's start poking around and looking at files.
 
 ```bash
@@ -153,7 +154,8 @@ This meaning of the period following the forward slash indicates HIDDEN folders 
 So run: `ls ~/ -al`.
 How many hidden folders and files are in home?
 
-2. editor (or: nano, vim)
+**2. editor (or: nano, vim)**
+
 The command `editor` will open up the default editor on the system.
 
 Run:
@@ -171,7 +173,8 @@ Pressing enter will leave the current settings, press a number will change your 
 
 Note: nano and vim are two very, very common text editors on Linux, and are included with debian machines.
 
-3. cp, mv, and rm
+**3. cp, mv, and rm**
+
 These three commands are VERY closely related.
 They will copy, move, and remove files and folders from a system and usually the results are PERMANENT!
 
@@ -206,31 +209,31 @@ ls ./
 ```
 This set of commands move the bash_history file from out of the hidden ssh folder to the working directory whilst renaming the file to "ThisFile".
 
-19. diff
+**19. diff**
 
-18. which
-9. find
-11. grep
-12. awk
+**18. which**
+**9. find**
+**11. grep**
+**12. awk**
 
-20. chmod
-21. chgrp
-22. chown
-22. adduser
-23. chattr
+**20. chmod**
+**21. chgrp**
+**22. chown**
+**22. adduser**
+**23. chattr**
 
-25. kill
-24. apt-get
-ssh
-15. ps
-16. ip (ifconfig)
-17. ss (netstat)
+**25. kill**
+**24. apt-get**
+**ssh**
+**15. ps**
+**16. ip (ifconfig)**
+**17. ss (netstat)**
 
 
-13. less
-8. | (pipe)
+**13. less**
+**8. | (pipe)**
 
-14. sudo
+**14. sudo**
 II. Existing Cyberspace Threats
 -------------------------------
 
